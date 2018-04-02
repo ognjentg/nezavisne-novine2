@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@style/Theme.Leanback"></style>
+    <style name="Theme.Example.Leanback" parent="Theme.Leanback">
+        <item name="searchOrbViewStyle">@style/CustomSearchOrbView</item>
+    </style>
+
+    <style name="CustomSearchOrbView" parent="Widget.Leanback.SearchOrbViewStyle">
+        <item name="searchOrbIcon">@drawable/nezavisne</item>
+    </style>
+</resources>

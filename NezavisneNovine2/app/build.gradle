@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.telegroup.nezavisnetvapp"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        renderscriptTargetApi
+        renderscriptSupportModeEnabled true
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:leanback-v17:26.1.0'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.github.bumptech.glide:glide:3.8.0'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'org.jsoup:jsoup:1.8.3'
+
+}
